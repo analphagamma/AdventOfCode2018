@@ -19,11 +19,7 @@ while (1) {
             $freqs{$cur_freq} = 1;
         } else {
             print("Duplicate item: $cur_freq\n");
-            $duplicate_freq = $cur_freq;
-            last;
+            exit
         }
-    }
-    if ($duplicate_freq) {
-        last;
     }
 }
